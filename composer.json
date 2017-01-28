@@ -1,0 +1,23 @@
+{
+  "name": "jjplaying/password",
+  "description": "a simple library to generate passwords",
+  "type": "library",
+  "license": "Creative Commons Attribution-ShareAlike 4.0",
+  "authors": [
+    {
+      "name": "Jarne",
+      "email": "jarne@surva.net"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "jjplaying\\password": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6"
+  }
+}
