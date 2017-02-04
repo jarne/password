@@ -4,7 +4,7 @@ a simple library to generate passwords
 
 ## Install
 
-You can easily install it with `composer require jjplaying/password`. If you don't have Composer, you can also clone the respository and use it.
+You can easily install it with `composer require jarne/password`. If you don't have Composer, you can also clone the respository and use it.
 
 ## Usage
 There are two functions, one to generate a random password, and one to generate a random one which is easy to remember because it sounds like a real word.
@@ -51,4 +51,4 @@ $password->generate(5);
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 You are free to copy, redistribute, change or expand our work, but you must give credits share it under the same license.
-password by [jjplaying](https://github.com/jjplaying/password) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+password by [jarne](https://github.com/jarne/password) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

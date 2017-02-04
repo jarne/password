@@ -6,7 +6,7 @@
  * Time: 18:54
  */
 
-namespace jjplaying\password;
+namespace jarne\password;
 
 use PHPUnit\Framework\TestCase;
 

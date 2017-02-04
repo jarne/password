@@ -6,7 +6,7 @@
  * Time: 18:20
  */
 
-namespace jjplaying\password;
+namespace jarne\password;
 
 class Password {
     /**
