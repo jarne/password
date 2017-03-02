@@ -1,6 +1,6 @@
 password
 =
-a simple library to generate passwords
+A simple library to generate passwords
 
 ## Install
 

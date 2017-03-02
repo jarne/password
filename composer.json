@@ -1,11 +1,11 @@
 {
   "name": "jarne/password",
-  "description": "a simple library to generate passwords",
+  "description": "A simple library to generate passwords",
   "type": "library",
   "license": "Creative Commons Attribution-ShareAlike 4.0",
   "autoload": {
     "psr-0": {
-      "jjplaying\\password": "src/"
+      "jarne\\password": "src/"
     }
   },
   "require": {
