@@ -22,15 +22,15 @@ class Password {
         $characters = "";
         $password = "";
 
-        for($i = 0; $i <= $lettersChance; $i++) {
+        for($i = 0; $i < $lettersChance; $i++) {
             $characters .= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
 
-        for($i = 0; $i <= $numbersChance; $i++) {
+        for($i = 0; $i < $numbersChance; $i++) {
             $characters .= "1234567890";
         }
 
-        for($i = 0; $i <= $specialCharactersChance; $i++) {
+        for($i = 0; $i < $specialCharactersChance; $i++) {
             $characters .= "!§$%&/()=?";
         }
 
@@ -59,17 +59,17 @@ class Password {
         $characters = "";
         $password = "";
 
-        for($i = 0; $i <= $lettersChance; $i++) {
+        for($i = 0; $i < $lettersChance; $i++) {
             $vowels .= "aeiouAEIOU";
 
             $characters .= "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
         }
 
-        for($i = 0; $i <= $numbersChance; $i++) {
+        for($i = 0; $i < $numbersChance; $i++) {
             $characters .= "1234567890";
         }
 
-        for($i = 0; $i <= $specialCharactersChance; $i++) {
+        for($i = 0; $i < $specialCharactersChance; $i++) {
             $characters .= "!§$%&/()=?";
         }
 
