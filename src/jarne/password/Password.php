@@ -8,6 +8,8 @@
 
 namespace jarne\password;
 
+use jarne\password\utils\Characters;
+
 class Password {
     /**
      * Generate a password
@@ -22,16 +24,20 @@ class Password {
         $characters = "";
         $password = "";
 
+        $lettersChance = ($lettersChance / strlen(Characters::LETTERS)) * 100;
+        $numbersChance = ($numbersChance / strlen(Characters::NUMBERS)) * 100;
+        $specialCharactersChance = ($specialCharactersChance / strlen(Characters::SPECIAL_CHARACTERS)) * 100;
+
         for($i = 0; $i < $lettersChance; $i++) {
-            $characters .= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            $characters .= Characters::LETTERS;
         }
 
         for($i = 0; $i < $numbersChance; $i++) {
-            $characters .= "1234567890";
+            $characters .= Characters::NUMBERS;
         }
 
         for($i = 0; $i < $specialCharactersChance; $i++) {
-            $characters .= "!?@(){}[]\/=~$%&#*-+.,_";
+            $characters .= Characters::SPECIAL_CHARACTERS;
         }
 
         $charactersLength = strlen($characters);
@@ -46,7 +52,7 @@ class Password {
     }
 
     /**
-     * Generate an easy to remeber password
+     * Generate an easy to remember password
      *
      * @param int $length
      * @param int $lettersChance
@@ -59,18 +65,22 @@ class Password {
         $characters = "";
         $password = "";
 
-        for($i = 0; $i < $lettersChance; $i++) {
-            $vowels .= "aeiouAEIOU";
+        $lettersChance = ($lettersChance / strlen(Characters::LETTERS)) * 100;
+        $numbersChance = ($numbersChance / strlen(Characters::NUMBERS)) * 100;
+        $specialCharactersChance = ($specialCharactersChance / strlen(Characters::SPECIAL_CHARACTERS)) * 100;
 
-            $characters .= "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+        for($i = 0; $i < $lettersChance; $i++) {
+            $vowels .= Characters::VOWEL_LETTERS;
+
+            $characters .= Characters::OTHER_LETTERS;
         }
 
         for($i = 0; $i < $numbersChance; $i++) {
-            $characters .= "1234567890";
+            $characters .= Characters::NUMBERS;
         }
 
         for($i = 0; $i < $specialCharactersChance; $i++) {
-            $characters .= "!?@(){}[]\/=~$%&#*-+.,_";
+            $characters .= Characters::SPECIAL_CHARACTERS;
         }
 
         $vowelsLength = strlen($vowels);
