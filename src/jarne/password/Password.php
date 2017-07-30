@@ -31,7 +31,7 @@ class Password {
         }
 
         for($i = 0; $i < $specialCharactersChance; $i++) {
-            $characters .= "!§$%&/()=?";
+            $characters .= "!?@(){}[]\/=~$%&#*-+.,_";
         }
 
         $charactersLength = strlen($characters);
@@ -70,7 +70,7 @@ class Password {
         }
 
         for($i = 0; $i < $specialCharactersChance; $i++) {
-            $characters .= "!§$%&/()=?";
+            $characters .= "!?@(){}[]\/=~$%&#*-+.,_";
         }
 
         $vowelsLength = strlen($vowels);
