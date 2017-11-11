@@ -1,11 +1,9 @@
-password
-=
+# password
 A simple library to generate passwords
 
 [![CircleCI](https://circleci.com/gh/jarne/password.svg?style=svg)](https://circleci.com/gh/jarne/password)
 
 ## Install
-
 You can easily install it with `composer require jarne/password`. If you don't have Composer, you can also clone the respository and use it.
 
 ## Usage
@@ -40,7 +38,6 @@ public function generateEasyToRemember(int $length = 8, int $lettersChance = 1, 
 ```
 
 ## Examples
-
 To generate a password which is 5 characters long, call:
 
 ```php
