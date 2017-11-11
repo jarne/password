@@ -1,0 +1,12 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.1-browsers
+    steps:
+      # Checkout branch
+      - checkout
+
+      # Run tests with PHPUnit
+      - run: php vendor/bin/phpunit

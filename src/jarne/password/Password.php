@@ -20,7 +20,7 @@ class Password {
      * @param int $specialCharactersChance
      * @return string
      */
-    public function generate(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1) {
+    public function generate(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string {
         $characters = "";
         $password = "";
 
@@ -60,10 +60,14 @@ class Password {
      * @param int $specialCharactersChance
      * @return string
      */
-    public function generateEasyToRemember(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1) {
+    public function generateEasyToRemember(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string {
         $vowels = "";
         $characters = "";
         $password = "";
+
+        if($lettersChance <= 0) {
+            return $this->generate($length, $lettersChance, $numbersChance, $specialCharactersChance);
+        }
 
         $lettersChance = ($lettersChance / strlen(Characters::LETTERS)) * 100;
         $numbersChance = ($numbersChance / strlen(Characters::NUMBERS)) * 100;
