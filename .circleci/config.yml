@@ -8,5 +8,14 @@ jobs:
       # Checkout branch
       - checkout
 
+      # Install Composer dependencies
+      - restore_cache:
+          key: composer-{{ checksum "composer.json" }}
+      - run: composer install
+      - save_cache:
+          key: composer-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+
       # Run tests with PHPUnit
       - run: php vendor/bin/phpunit
