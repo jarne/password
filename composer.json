@@ -2,7 +2,6 @@
   "name": "jarne/password",
   "description": "A simple library to generate passwords",
   "type": "library",
-  "license": "Creative Commons Attribution-ShareAlike 4.0",
   "autoload": {
     "psr-0": {
       "jarne\\password": "src/"
