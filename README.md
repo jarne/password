@@ -1,5 +1,4 @@
-password
-=
+# password
 A simple library to generate passwords
 
 [![CircleCI](https://circleci.com/gh/jarne/password.svg?style=svg)](https://circleci.com/gh/jarne/password)

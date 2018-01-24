@@ -90,21 +90,21 @@ class Password {
         $vowelsLength = strlen($vowels);
         $charactersLength = strlen($characters);
 
-        $lastCharactersWereVowel = true;
+        $lastCharacterWasVowel = true;
 
         for($i = 0; $i < $length; $i++) {
-            if($lastCharactersWereVowel) {
+            if($lastCharacterWasVowel) {
                 $arrayIndex = rand(0, $charactersLength - 1);
 
                 $password .= $characters[$arrayIndex];
 
-                $lastCharactersWereVowel = false;
+                $lastCharacterWasVowel = false;
             } else {
                 $arrayIndex = rand(0, $vowelsLength - 1);
 
                 $password .= $vowels[$arrayIndex];
 
-                $lastCharactersWereVowel = true;
+                $lastCharacterWasVowel = true;
             }
         }
 
