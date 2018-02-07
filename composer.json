@@ -2,7 +2,7 @@
   "name": "jarne/password",
   "description": "A simple library to generate passwords",
   "type": "library",
-  "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+  "license": "CC-BY-SA-4.0",
   "minimum-stability": "stable",
   "autoload": {
     "psr-0": {
@@ -13,6 +13,6 @@
     "php": ">=7.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.0"
+    "phpunit/phpunit": "^7.0"
   }
 }
