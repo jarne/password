@@ -1,18 +1,37 @@
 {
   "name": "jarne/password",
   "description": "A simple library to generate passwords",
+  "version": "1.3.0",
   "type": "library",
+  "keywords": [
+    "password",
+    "generate",
+    "library",
+    "characters",
+    "vowels"
+  ],
+  "homepage": "https://github.com/jarne/password",
   "license": "CC-BY-SA-4.0",
-  "minimum-stability": "stable",
-  "autoload": {
-    "psr-0": {
-      "jarne\\password": "src/"
+  "authors": [
+    {
+      "name": "Jarne",
+      "homepage": "https://github.com/jarne",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/jarne/password/issues",
+    "source": "https://github.com/jarne/password"
   },
   "require": {
     "php": ">=7.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "jarne\\password": "src/"
+    }
   }
 }
