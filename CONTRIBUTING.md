@@ -8,7 +8,7 @@ Everyone parcipating in this project must accept our [Code of Conduct](CODE_OF_C
 Please ask questions on [Gitter](https://gitter.im/jarne/password). You will get a faster answer there and don't disturb maintainers and contributors in the issue tracker.
 
 ## ✉️ Issues and Pull Requests
-If you found a bug or have an idea how to improve or add a new feature, you're welcome to [open an issue](https://github.com/jarne/password/issues/new). Please keep in mind this guidelines and [check if there is already an issue](https://github.com/jarne/Chat/issues) with the same content like yours.
+If you found a bug or have an idea how to improve or add a new feature, you're welcome to [open an issue](https://github.com/jarne/password/issues/new). Please keep in mind this guidelines and [check if there is already an issue](https://github.com/jarne/password/issues) with the same content like yours.
 
 Feel free to [open a pull request](https://github.com/jarne/password/compare) if you fixed a bug or added or improved a feature.
 
