@@ -25,7 +25,7 @@
 
 [• Install](#-install)  
 [• Usage](#-usage)  
-[• Examples](#-examples)  
+[• Examples](#%EF%B8%8F-examples)  
 [• Contribution](#-contribution)  
 [• License](#%EF%B8%8F-license)
 
