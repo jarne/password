@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/circleci/project/github/jarne/password.svg" alt="CircleCI">
     </a>
     <a href="https://github.com/jarne/password/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/license-CC--BY--SA--4.0-orange.svg" alt="License">
+        <img src="https://img.shields.io/github/license/jarne/password.svg" alt="License">
     </a>
     <a href="https://gitter.im/jarne/password">
         <img src="https://img.shields.io/gitter/room/jarne/password.svg" alt="Gitter">
