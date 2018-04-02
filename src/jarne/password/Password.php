@@ -20,7 +20,12 @@ class Password {
      * @param int $specialCharactersChance
      * @return string
      */
-    public function generate(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string {
+    public function generate(
+        int $length = 8,
+        int $lettersChance = 1,
+        int $numbersChance = 1,
+        int $specialCharactersChance = 1
+    ): string {
         $characters = "";
         $password = "";
 
@@ -60,7 +65,12 @@ class Password {
      * @param int $specialCharactersChance
      * @return string
      */
-    public function generateEasyToRemember(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string {
+    public function generateEasyToRemember(
+        int $length = 8,
+        int $lettersChance = 1,
+        int $numbersChance = 1,
+        int $specialCharactersChance = 1
+    ): string {
         $vowels = "";
         $characters = "";
         $password = "";
