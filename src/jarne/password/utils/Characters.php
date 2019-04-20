@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: jarne
- * Date: 30.07.17
- * Time: 18:47
+ * password | characters map
  */
 
 namespace jarne\password\utils;

@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: jarne
- * Date: 02.11.16
- * Time: 18:54
+ * password | library test file
  */
 
 namespace jarne\password;
