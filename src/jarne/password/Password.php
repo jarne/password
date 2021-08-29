@@ -7,7 +7,8 @@ namespace jarne\password;
 
 use jarne\password\utils\Characters;
 
-class Password {
+class Password
+{
     /**
      * Generate a password
      *
@@ -30,21 +31,21 @@ class Password {
         $numbersChance = ($numbersChance / strlen(Characters::NUMBERS)) * 100;
         $specialCharactersChance = ($specialCharactersChance / strlen(Characters::SPECIAL_CHARACTERS)) * 100;
 
-        for($i = 0; $i < $lettersChance; $i++) {
+        for ($i = 0; $i < $lettersChance; $i++) {
             $characters .= Characters::LETTERS;
         }
 
-        for($i = 0; $i < $numbersChance; $i++) {
+        for ($i = 0; $i < $numbersChance; $i++) {
             $characters .= Characters::NUMBERS;
         }
 
-        for($i = 0; $i < $specialCharactersChance; $i++) {
+        for ($i = 0; $i < $specialCharactersChance; $i++) {
             $characters .= Characters::SPECIAL_CHARACTERS;
         }
 
         $charactersLength = strlen($characters);
 
-        for($i = 0; $i < $length; $i++) {
+        for ($i = 0; $i < $length; $i++) {
             $arrayIndex = rand(0, $charactersLength - 1);
 
             $password .= $characters[$arrayIndex];
@@ -72,7 +73,7 @@ class Password {
         $characters = "";
         $password = "";
 
-        if($lettersChance <= 0) {
+        if ($lettersChance <= 0) {
             return $this->generate($length, $lettersChance, $numbersChance, $specialCharactersChance);
         }
 
@@ -80,17 +81,17 @@ class Password {
         $numbersChance = ($numbersChance / strlen(Characters::NUMBERS)) * 100;
         $specialCharactersChance = ($specialCharactersChance / strlen(Characters::SPECIAL_CHARACTERS)) * 100;
 
-        for($i = 0; $i < $lettersChance; $i++) {
+        for ($i = 0; $i < $lettersChance; $i++) {
             $vowels .= Characters::VOWEL_LETTERS;
 
             $characters .= Characters::OTHER_LETTERS;
         }
 
-        for($i = 0; $i < $numbersChance; $i++) {
+        for ($i = 0; $i < $numbersChance; $i++) {
             $characters .= Characters::NUMBERS;
         }
 
-        for($i = 0; $i < $specialCharactersChance; $i++) {
+        for ($i = 0; $i < $specialCharactersChance; $i++) {
             $characters .= Characters::SPECIAL_CHARACTERS;
         }
 
@@ -99,8 +100,8 @@ class Password {
 
         $lastCharacterWasVowel = true;
 
-        for($i = 0; $i < $length; $i++) {
-            if($lastCharacterWasVowel) {
+        for ($i = 0; $i < $length; $i++) {
+            if ($lastCharacterWasVowel) {
                 $arrayIndex = rand(0, $charactersLength - 1);
 
                 $password .= $characters[$arrayIndex];

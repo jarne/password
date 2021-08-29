@@ -16,9 +16,6 @@
     <a href="https://github.com/jarne/password/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/jarne/password.svg" alt="License">
     </a>
-    <a href="https://gitter.im/jarne/password">
-        <img src="https://img.shields.io/gitter/room/jarne/password.svg" alt="Gitter">
-    </a>
 </p>
 
 ##
@@ -59,7 +56,12 @@ The arguments are the same for both functions:
  * @param int $specialCharactersChance
  * @return string
  */
-public function generate(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string
+public function generate(
+    int $length = 8,
+    int $lettersChance = 1,
+    int $numbersChance = 1,
+    int $specialCharactersChance = 1
+): string
 ```
 
 ```php
@@ -72,7 +74,12 @@ public function generate(int $length = 8, int $lettersChance = 1, int $numbersCh
  * @param int $specialCharactersChance
  * @return string
  */
-public function generateEasyToRemember(int $length = 8, int $lettersChance = 1, int $numbersChance = 1, int $specialCharactersChance = 1): string
+public function generateEasyToRemember(
+    int $length = 8,
+    int $lettersChance = 1,
+    int $numbersChance = 1,
+    int $specialCharactersChance = 1
+): string
 ```
 
 See the examples section for a short code example how to use it.

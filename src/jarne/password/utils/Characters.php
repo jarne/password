@@ -5,11 +5,12 @@
 
 namespace jarne\password\utils;
 
-class Characters {
-    const LETTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const NUMBERS = "1234567890";
-    const SPECIAL_CHARACTERS = "!?@()[]/=$%&#*-+.,;_";
+class Characters
+{
+    public const LETTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public const NUMBERS = "1234567890";
+    public const SPECIAL_CHARACTERS = "!?@()[]/=$%&#*-+.,;_";
 
-    const VOWEL_LETTERS = "aeiouAEIOU";
-    const OTHER_LETTERS = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+    public const VOWEL_LETTERS = "aeiouAEIOU";
+    public const OTHER_LETTERS = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
 }
