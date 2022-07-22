@@ -4,17 +4,23 @@
  * password | library test file
  */
 
-namespace jarne\password;
+namespace jarne\password\tests;
 
+use jarne\password\Password;
 use jarne\password\utils\Characters;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @coversDefaultClass \jarne\password\Password
+ */
 class PasswordTest extends TestCase
 {
     /* Normal generation */
 
     /**
      * Test to generate a normal short password
+     *
+     * @covers ::generate
      */
     public function testGenerate(): void
     {
@@ -27,6 +33,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a password with only letters
+     *
+     * @covers ::generate
      */
     public function testGenerateOnlyLetters(): void
     {
@@ -40,6 +48,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a password with only numbers
+     *
+     * @covers ::generate
      */
     public function testGenerateOnlyNumbers(): void
     {
@@ -53,6 +63,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a password with only special characters
+     *
+     * @covers ::generate
      */
     public function testGenerateOnlySpecialCharacters(): void
     {
@@ -79,6 +91,8 @@ class PasswordTest extends TestCase
 
     /**
      * Generate a really long password
+     *
+     * @covers ::generate
      */
     public function testGenerateReallyLong(): void
     {
@@ -91,6 +105,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long password with only letters
+     *
+     * @covers ::generate
      */
     public function testGenerateReallyLongOnlyLetters(): void
     {
@@ -104,6 +120,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long password with only numbers
+     *
+     * @covers ::generate
      */
     public function testGenerateReallyLongOnlyNumbers(): void
     {
@@ -117,6 +135,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long password with only special characters
+     *
+     * @covers ::generate
      */
     public function testGenerateReallyLongOnlySpecialCharacters(): void
     {
@@ -143,6 +163,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test generating an easy to remember password
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateEasyToRemember(): void
     {
@@ -155,6 +177,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate an easy to remember password with only letters
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateEasyToRememberOnlyLetters(): void
     {
@@ -168,6 +192,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate an easy to remember password with only numbers
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateEasyToRememberOnlyNumbers(): void
     {
@@ -181,6 +207,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate an easy to remember password with only special characters
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateEasyToRememberOnlySpecialCharacters(): void
     {
@@ -207,6 +235,8 @@ class PasswordTest extends TestCase
 
     /**
      * Generate a really long easy to remember password
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateReallyLongEasyToRemember(): void
     {
@@ -219,6 +249,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long easy to remember password with only letters
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateReallyLongEasyToRememberOnlyLetters(): void
     {
@@ -232,6 +264,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long easy to remember password with only numbers
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateReallyLongEasyToRememberOnlyNumbers(): void
     {
@@ -245,6 +279,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a really long easy to remember password with only special characters
+     *
+     * @covers ::generateEasyToRemember
      */
     public function testGenerateReallyLongEasyToRememberOnlySpecialCharacters(): void
     {
@@ -271,6 +307,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a normal short password with random length
+     *
+     * @covers ::generate
      */
     public function testGenerateRandomLength(): void
     {
@@ -287,6 +325,8 @@ class PasswordTest extends TestCase
 
     /**
      * Test to generate a password with only letters and chances in percent
+     *
+     * @covers ::generate
      */
     public function testGenerategOnlyLetters(): void
     {
