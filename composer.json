@@ -36,6 +36,11 @@
             "jarne\\password\\": "src/jarne/password/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "jarne\\password\\tests\\": "tests/jarne/password/"
+        }
+    },
     "scripts": {
         "code-analyze": "./vendor/bin/phpstan analyze -l 3 src tests",
         "code-analyze-save-report": "./vendor/bin/phpstan analyze -l 3 --error-format junit src tests > test-results/phpstan-result/junit.xml",
