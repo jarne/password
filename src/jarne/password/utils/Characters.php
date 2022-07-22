@@ -1,4 +1,5 @@
 <?php
+
 /**
  * password | characters map
  */
